@@ -46,6 +46,7 @@
 	
 	.section {
 		width: 80%;
+		height: 200px;
 	}
 	.background{
 	background: 
@@ -57,27 +58,6 @@
     url(../img/sambodromo.jpg) center no-repeat;
 	background-size: 160%;
 	}
-	
-	footer {
-	font-size: 0.48em;
-	line-height: 12px;
-	}
-	
-	#footer-one > div {
-	  width: 100px;
-	  height: 80px;
-	  *border: 2px dashed red;
-	}
-
-	
-	#footer-sponsors {
-	padding-left: 30px;
-	}
-	
-	#footer-social {
-	padding-left: 48px;
-	}
-
 	
 }
 
