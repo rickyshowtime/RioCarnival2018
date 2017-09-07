@@ -24,23 +24,6 @@
 	text-align: center;
 	display: table;
 	}
-
-	nav li {
-		display: flex; 
-		flex-direction: column;/* establish flex container */  
-		text-align: center;
-		justify-content: center;
-		width:100%;
-		
-	}
-
-	nav li a {
-		width:75%;
-		height: 100%;
-		margin: auto auto;
-		text-align: center;
-		font-size: 1.1em!important;
-	}
 	
 	#ArticleTitle {
 	width:75%
@@ -61,6 +44,23 @@
 	}
 
 	.nav-hide { display: none; }
+	
+	nav li {
+		display: flex; 
+		flex-direction: column;/* establish flex container */  
+		text-align: center;
+		justify-content: center;
+		width:100%;
+		
+	}
+
+	nav li a {
+		width:75%;
+		height: 100%;
+		margin: auto auto;
+		text-align: center;
+		font-size: 1.1em!important;
+	}
 	
 	
 	#logo {
