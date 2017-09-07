@@ -39,7 +39,7 @@
 	nav li a {
 		width:50%;
 		height: 100%;
-		margin: auto 0 auto -15%;
+		margin: auto 0 auto 0;
 		text-align: center;
 		font-size: 1.3em!important;
 	}
