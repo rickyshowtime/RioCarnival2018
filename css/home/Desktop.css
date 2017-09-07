@@ -1,0 +1,348 @@
+html, body { height: 100%; width: 100%; margin: 0; overflow-x: hidden;}
+
+html {
+	font-family: 'Muli', sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 16px;
+	
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 0.8em;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 0.8em;
+}
+
+.subtitle {
+	color: inherit;
+	font-size: 10px;
+	margin-bottom: 0.8em;
+}
+
+p {
+	font-size: 8px;
+	margin-bottom: 0.8em;
+}
+
+.center {
+	width: 100%;
+	margin: auto;
+}
+
+
+/* LAYOUT
+ * Dimenssions et positionnement des choses
+------------------------------------------------*/
+
+/* HEADER 
+../../../../../../../../../../../../../../../../../../../../../../../../*/
+
+@media (min-width: 960px) {
+	#menuburger{
+		display:none;
+	}
+}
+
+header {
+	background: url(../..//img/riowallpaper.jpg) fixed no-repeat;
+	background-size: 120%;
+	background-position: 0 -120px;
+	z-index: -1;
+	text-align: right;
+	line-height: 1.2;
+	height: 82% !important;
+	margin: 0 auto;
+}
+
+#shade {
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.40)
+}
+
+#header{
+	display:flex;
+	justify-content: space-between;
+	height: 200px;
+	text-align: left; 
+	
+}
+
+#header_text{
+	width:200px;
+	margin-top: 5%;
+	max-width: 400px;
+}
+
+
+#logo{
+	position: relative;
+	margin-left: 78%;
+	width:100px;
+	}
+
+#logo-carnival{
+	position: relative;
+	padding-left: 25px;
+	transform: translate(0px, -45px);
+	}
+	
+#logo-2018{
+	position: relative;
+	padding-left: 25px;
+	transform: translate(0px, -55px);
+	}
+
+
+/* NAV
+../../../../../../../../../../../../../../../../../../../../../../../../*/
+
+header nav {
+	color: #fff;
+	padding: 1.5em 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav li a {
+	display: block;
+	font-weight: 700;
+	font-size: 1em;
+	padding: 0.2em 5.5em;
+	height: 20px;
+}
+
+nav li span {
+	border-bottom:solid 2px transparent;
+	padding-bottom: 5px;
+	transition: all 0.1s ease;
+}
+
+nav li span:hover {
+	border-bottom:solid 2px #fff;
+	*color: #fcdb00;
+	padding-bottom: 5px;
+	border-bottom-left-radius: 0.5px;
+	border-bottom-right-radius: 0.5px;
+	transition: all 0.2s ease-in-out;
+}
+
+.active {
+	border-bottom:solid 2px #fff;
+	*color: #fcdb00;
+	padding-bottom: 5px;
+	border-bottom-left-radius: 0.5px;
+	border-bottom-right-radius: 0.5px;
+	transition: all 0.2s ease-in-out;
+}
+
+
+/* Article
+../../../../../../../../../../../../../../../../../../../../../../../../*/
+
+main{
+	background: #fff;
+}
+
+article {
+	max-width: 1200px;
+	margin: 0 auto 25px auto;
+}
+
+#ArticleTitle {
+	text-align: center;
+	min-width: 180px;
+	width: 40%;
+	margin: 0 auto;
+	padding: 4% 0 1% 0;
+}
+
+.subtitle {
+	line-height: 12px;
+}
+
+#arrow {
+	position: relative;
+	margin: -0.5% 49% 1.5% 49%;
+	width: 20px;
+}
+
+ul,li {
+  	list-style: none;
+  }
+
+.flex-container {
+  	display: flex;
+    flex-flow: row wrap;
+  	width: 100%;
+    margin: auto;
+  }	
+
+.section {
+	background-color: #e3e3e3;
+	position: relative;
+	min-width: 200px;
+	width: 47%;
+	height: 200px;
+	margin: 10px auto;
+	*box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	text-align:center;
+	/* Gradient to h1 */
+
+}
+
+.section-icon {
+	color: #fff;
+	margin: 75px 48%;
+	font-size: 25px;
+	position:absolute;
+	transform: translateY(-50%)!important;
+}
+
+.section-text {
+	font-size: 1.5em;
+	margin: 110px 10px;
+	color: #fff;
+}
+
+#s1{
+	background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../../img/calendar.jpg);
+	background-size: 100%;
+	background-position: center
+}
+
+#countdown {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#s2 p {
+	font-size: 0.5em;
+}
+
+#s2 {
+	background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../../img/news.png) center;
+	background-size: 100%;
+}
+
+#s3 p {
+	font-size: 0.5em;
+}
+
+#s3{
+	background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../../img/sambodromo.jpg);
+	background-size: 100%;
+}
+
+
+#s4 p {
+	font-size: 12px;
+}
+
+#s4{
+	background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://scontent-frt3-2.cdninstagram.com/t51.2885-15/e35/21224435_324441771354403_6995104847200518144_n.jpg);
+	background-size: 100%;
+	
+}
+
+.p-on-white {
+	color: #fff;
+}
+
+footer {
+	font-size: 0.65em;
+	line-height: 16px;
+	background-color: #242424;
+	color: #fff;
+}
+
+.footer-title {
+	font-size: 1.25em;
+	line-height: 16px;
+	font-weight: bold;
+	width: 140px;
+	text-align: right;
+}
+
+#footer-one{
+	display: flex;                  /* establish flex container */
+	flex-direction: row;            /* default value; can be omitted */
+	flex-wrap: nowrap;              /* default value; can be omitted */
+	justify-content: space-between; /* switched from default (flex-start, see below) */
+	padding: 2% 3%;
+	margin-bottom:10px;
+}
+
+#footer-one > div {
+  width: 200px;
+  height: 80px;
+  *border: 2px dashed red;
+}
+
+#footer-sponsors {
+	text-align: center;
+}
+
+#footer-social {
+	text-align: right;
+	display: flex;                  /* establish flex container */
+	flex-direction: row;            /* default value; can be omitted */
+	flex-wrap: nowrap; 
+}
+
+.fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-youtube-square {
+	font-size: 24px !important;
+	margin: 0 12px 0 5px;
+} 
+
+#footer-info {
+	width: 100%;
+	text-align: center;
+	padding: 1.5%;
+	border-top:solid;
+	border-top-width: thin;
+	border-top-color: #fff;
+}

@@ -1,0 +1,445 @@
+html, body { height: 100%; width: 100%; margin: 0; overflow-x: hidden;}
+
+html {
+	font-family: 'Muli', sans-serif;
+	box-sizing: border-box;
+	background: url(../../img/riowallpaper.jpg) fixed no-repeat;
+	background-size: 120%;
+	background-position: 0 -120px;
+	z-index: -1;
+}
+
+body{
+	font-size: 16px;
+	
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 0.8em;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 0.8em;
+}
+
+.subtitle {
+	color: inherit;
+	font-size: 10px;
+	margin-bottom: 0.8em;
+}
+
+p {
+	font-size: 8px;
+	margin-bottom: 0.8em;
+}
+
+.center {
+	width: 100%;
+	margin: auto;
+}
+
+
+/* LAYOUT
+ * Dimenssions et positionnement des choses
+------------------------------------------------*/
+
+/* HEADER 
+........................*/
+
+@media (min-width: 960px) {
+	#menuburger{
+		display:none;
+	}
+}
+
+header {
+	text-align: right;
+	line-height: 1.2;
+	height: 25% !important;
+	margin: 0 auto;
+}
+
+#shade {
+	z-index: 1;
+	width: 100%;
+	height: 140%;
+	background-color: rgba(0,0,0,0.40)
+}
+
+#header{
+	display:flex;
+	justify-content: space-between;
+	height: 200px;
+	text-align: left; 
+	
+}
+
+#header_text{
+	width:200px;
+	margin-top: 5%;
+	max-width: 400px;
+}
+
+
+#logo{
+	position: relative;
+	margin-left: -5%;
+	margin-top:-12%;
+	width:100px;
+	}
+
+#logo-carnival{
+	position: relative;
+	padding-left: 25px;
+	transform: translate(31px, -130px);
+	}
+	
+#logo-2018{
+	position: relative;
+	padding-left: 25px;
+	transform: translate(31px, -168px);
+	}
+
+
+/* NAV
+........................*/
+
+header nav {
+	color: #fff;
+	padding: 1.5em 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav li a {
+	display: block;
+	font-weight: 700;
+	font-size: 1em;
+	padding: 0.2em 5.5em;
+	height: 20px;
+}
+
+nav li span {
+	border-bottom:solid 2px transparent;
+	padding-bottom: 5px;
+	transition: all 0.1s ease;
+}
+
+nav li span:hover {
+	border-bottom:solid 2px #fff;
+	*color: #fcdb00;
+	padding-bottom: 5px;
+	border-bottom-left-radius: 0.5px;
+	border-bottom-right-radius: 0.5px;
+	transition: all 0.2s ease-in-out;
+}
+
+.active {
+	border-bottom:solid 2px #fff;
+	*color: #fcdb00;
+	padding-bottom: 5px;
+	border-bottom-left-radius: 0.5px;
+	border-bottom-right-radius: 0.5px;
+	transition: all 0.2s ease-in-out;
+}
+
+
+/* Article
+........................*/
+
+main{
+	*background: #fff;
+}
+
+article {
+	max-width: 1200px;
+	margin: 0 auto 25px auto;
+}
+
+#ArticleTitle {
+	text-align: center;
+	min-width: 180px;
+	width: 40%;
+	margin: 0 auto;
+	padding: 4% 0 1% 0;
+}
+
+.subtitle {
+	line-height: 12px;
+}
+
+#arrow {
+	position: relative;
+	margin: -0.5% 49% 1.5% 49%;
+	width: 20px;
+}
+
+ul,li {
+  	list-style: none;
+  }
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.accordion {
+  background: #558f42;
+  width: 100%;
+  min-width: 950px;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  height: 500px;
+  font-size: 0;
+}
+
+#choose-sm {
+	font-size: 4em;
+	text-align: right;
+	width:100%;
+}
+
+.tabs {
+  display: inline-block;
+  background-color: #ebd43f;
+  border-right: #558f42 1px solid;
+  width: 6%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  -moz-transition: all 0.4s ease-in-out 0.1s;
+  -o-transition: all 0.4s ease-in-out 0.1s;
+  -webkit-transition: all 0.4s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+  transition: all 0.4s ease-in-out 0.1s;
+}
+
+.yellow {
+  *background-color: #ebd43f;
+}
+
+.green{
+  *background-color: #558f42;
+}
+
+.tabs:hover {
+  width: 79.5%;
+}
+.tabs:hover .social-links a:before {
+  margin-left: -100px;
+}
+.tabs:hover .social-links a:after {
+  margin-left: -5px;
+}
+.tabs .paragraph {
+  position: relative;
+  margin-left: 80px;
+  padding: 20px 0 0 10px;
+  height: 500px;
+  background: #fff;
+}
+.tabs .paragraph h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.tabs .paragraph p {
+  font-size: 0.88em;
+  line-height: 1.5em;
+  padding-right: 30px;
+}
+
+.social-links {
+  display: block;
+}
+.social-links a {
+  display: block;
+  text-indent: -9999px;
+  font-size: 0;
+  line-height: 0;
+}
+.social-links a:before, .social-links a:after {
+  -moz-transition: all 0.4s ease-in-out 0.1s;
+  -o-transition: all 0.4s ease-in-out 0.1s;
+  -webkit-transition: all 0.4s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+  transition: all 0.4s ease-in-out 0.1s;
+  width: 80px;
+  height: 500px;
+  position: absolute;
+  text-indent: 0;
+  padding-top: 90px;
+  padding-left: 25px;
+  display: block;
+  font: normal 30px Genericons;
+  color: #fff;
+}
+.social-links a:after {
+  font-size: 48px;
+  padding-left: 20px;
+  padding-top: 80px;
+  margin-left: 85px;
+}
+
+#twitterfeed {
+	width:50%!important;
+	margin-top: -30px;
+}
+
+.twitter-follow-button	{
+	margin-left: 60%;
+}
+
+.twitter-icon a:before, .twitter-icon a:after {
+  font-family: FontAwesome;
+  content: "\f081";
+}
+.twitter-icon a:after {
+ background-color:#65a2d9;
+}
+
+
+.fb-video {
+	overflow:hidden;
+  	padding-bottom: 25%;
+    position:relative;
+    height:0;
+}
+
+.fb-video iframe{
+	left:0;
+    top:0;
+    *height:100%;
+    *width:100%;
+    position:absolute;
+}
+
+
+.facebook-icon a:before, .facebook-icon a:after {
+  font-family: FontAwesome;
+  content: "\f082";
+}
+.facebook-icon a:after {
+  background-color:#4e598f;
+}
+
+#instagram-mobile{
+	display:none;
+}
+
+.insta-icon a:before, .insta-icon a:after {
+  font-family: FontAwesome;
+  content: '\f16d';
+}
+.insta-icon a:after {
+  background-color: #6c27b3;
+}
+
+.youtube-icon a:before, .youtube-icon a:after {
+  font-family: FontAwesome;
+  content: '\f166';
+}
+.youtube-icon a:after {
+  background-color: #df192a;
+}
+
+.p-on-white {
+	color: #fff;
+}
+
+footer {
+	font-size: 0.55em;
+	line-height: 16px;
+	background-color: #242424;
+	color: #fff;
+}
+
+.footer-title {
+	font-size: 1.25em;
+	line-height: 16px;
+	font-weight: bold;
+	width: 140px;
+	text-align: right;
+}
+
+#footer-one{
+	display: flex;                  /* establish flex container */
+	flex-direction: row;            /* default value; can be omitted */
+	flex-wrap: nowrap;              /* default value; can be omitted */
+	justify-content: space-between; /* switched from default (flex-start, see below) */
+	padding: 2% 3%;
+	margin-bottom:10px;
+}
+
+#footer-one > div {
+  width: 200px;
+  height: 80px;
+  *border: 2px dashed red;
+}
+
+#footer-sponsors {
+	text-align: center;
+}
+
+#footer-social {
+	text-align: right;
+	display: flex;                  /* establish flex container */
+	flex-direction: row;            /* default value; can be omitted */
+	flex-wrap: nowrap; 
+}
+
+.fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-youtube-square {
+	font-size: 24px !important;
+	margin: 0 12px 0 5px;
+} 
+
+#footer-info {
+	width: 100%;
+	text-align: center;
+	padding: 1.5%;
+	border-top:solid;
+	border-top-width: thin;
+	border-top-color: #fff;
+}
