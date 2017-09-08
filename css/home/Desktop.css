@@ -1,4 +1,4 @@
-html, body { height: 100%; width: 100%; margin: 0; *overflow-x: hidden;}
+html, body { height: 100%; width: 100%; margin: 0; overflow-x: hidden;}
 
 html {
 	font-family: 'Muli', sans-serif;
@@ -331,6 +331,7 @@ footer {
 	display: flex;                  /* establish flex container */
 	flex-direction: row;            /* default value; can be omitted */
 	flex-wrap: nowrap; 
+	padding-left:30%;
 }
 
 .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-youtube-square {
@@ -339,7 +340,7 @@ footer {
 } 
 
 #footer-info {
-	width: 90%;
+	width: 100%;
 	text-align: center;
 	padding: 1.5%;
 	border-top:solid;

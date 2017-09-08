@@ -68,7 +68,7 @@
 		flex-direction: column;/* establish flex container */  
 		text-align: center;
 		justify-content: center;
-		width:100%;
+		width:80%;
 		
 	}
 
@@ -191,6 +191,10 @@
 	  color: inherit;
 	  font-weight: bolder;
 	  text-decoration: none;
+	}
+	
+	#footer-info {
+		width: 100%;
 	}
 	
 }
