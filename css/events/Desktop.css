@@ -305,6 +305,18 @@ input[type="radio"][id="yellow"]:checked ~ .blue, input[type="radio"][id="yellow
   color:#000;
 }
 
+.book-ticket {
+	font-size:0.8em;
+	padding: 12% 2% 2% 0;
+	color: #002776;
+	font-weight: bold;
+	text-align: right;
+}
+
+.book-ticket:hover {
+text-decoration: underline;
+}
+
 .p-on-white {
 	color: #fff;
 }

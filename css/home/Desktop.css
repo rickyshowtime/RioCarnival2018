@@ -210,6 +210,13 @@ ul,li {
 
 }
 
+.alink {
+	display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
 .section-icon {
 	color: #fff;
 	margin: 75px 48%;
