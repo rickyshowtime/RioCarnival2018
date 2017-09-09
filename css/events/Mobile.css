@@ -191,12 +191,7 @@
 	  color:#000;
 	}
 	
-	.fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-youtube-square {
-	font-size: 14px !important;
-	margin: 0 6px 0 -2px;
-	}
-	
-		footer {
+	footer {
 	font-size: 0.38em;
 	line-height: 10px;
 	}
@@ -207,7 +202,7 @@
 	}
 	
 	#footer-one > div {
-	  width: 100px;
+	  width: 500px;
 	  height: 70px;
 	  *border: 2px dashed red;
 	}
@@ -217,8 +212,35 @@
 	}
 	
 	#footer-social {
-	padding-left: 48px;
+	padding-left:  25%;
+	text-align: right;
 	}
+	
+	.fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-youtube-square {
+		margin: 0 2px 0 1px;
+		font-size: 14px !important;
+		
+	} 
+	
+	.footer-title{
+		width: 50px;
+	}
+	
+	#f-margin {
+	margin-left: 30%;
+	}
+	
+	ul li a {
+	  font-size: 24pt;
+	  color: inherit;
+	  font-weight: bolder;
+	  text-decoration: none;
+	}
+	
+	#footer-info {
+		width: 100%;
+	}
+	
 
 }
 
@@ -280,45 +302,6 @@
     ),
     url(../img/sambodromo.jpg) center no-repeat;
 	background-size: 260%;
-	}
-	
-	footer {
-	font-size: 0.65em;
-	line-height: 16px;
-	background-color: #242424;
-	color: #fff;
-	}
-
-	#footer-one{
-		display: flex;                  /* establish flex container */
-		flex-direction: row;            /* default value; can be omitted */
-		flex-wrap: nowrap;              /* default value; can be omitted */
-		justify-content: space-between; /* switched from default (flex-start, see below) */
-		padding: 2% 3%;
-		margin-bottom:10px;
-	}
-
-	#footer-one > div {
-	  width: 200px;
-	  height: 80px;
-	  *border: 2px dashed red;
-	}
-
-	#footer-sponsors {
-		text-align: center;
-	}
-
-	#footer-social {
-		text-align: right;
-	}
-
-	#footer-info {
-		width: 100%;
-		text-align: center;
-		padding: 1.5%;
-		border-top:solid;
-		border-top-width: thin;
-		border-top-color: #fff;
 	}
 	
 	ul li a {

@@ -390,7 +390,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 footer {
-	font-size: 0.55em;
+	font-size: 0.65em;
 	line-height: 16px;
 	background-color: #242424;
 	color: #fff;
@@ -428,6 +428,7 @@ footer {
 	display: flex;                  /* establish flex container */
 	flex-direction: row;            /* default value; can be omitted */
 	flex-wrap: nowrap; 
+	padding-left:30%;
 }
 
 .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-youtube-square {

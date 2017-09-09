@@ -1,11 +1,8 @@
-$('a[href*="#"]').click(function(e) {
-    e.preventDefault();
-    var target = this.hash;
-    $target = $(target);
-
-    $('html, body').stop().animate({
-        'scrollTop': $target.offset().top
-    }, 900, 'swing', function () {
-        window.location.hash = target;
-    });
-});
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});

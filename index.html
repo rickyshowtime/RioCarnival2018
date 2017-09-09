@@ -22,9 +22,7 @@
 <!-- FONTAWESOME -->
 <link rel="stylesheet" href="img/font-awesome/css/font-awesome.min.css">
 
-    <!-- Load jQuery -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-
+<!-- End of SMOOTH SCROLL -->
 </head>
 
 <body>
@@ -78,15 +76,15 @@
         <div id="ArticleTitle">
         <h1>Rio Carnival 2018</h1>
         <p class="subtitle"> See what's today main event, check out our last updates, don't miss our last tickets offers and see our best pictures of Rio carnival.</p></div>
-        <div class="center"><a rel="" href="#scroll"><img id="arrow" src="img/expand-arrow.svg"></a></div>
+        <div class="center"><a rel="" class=".js-scrollTo" href="#scroll"><img id="arrow" src="img/expand-arrow.svg"></a></div>
         
 		<ul class="flex-container">
         <!-- A section... -->
         <section class="section" id="s1">
           <!-- A section header... -->
           <figure class="section-icon"><i class="fa fa-calendar" aria-hidden="true"></i></figure>
-          <div class="section-text">
-						<h2><a name="scroll" id="scroll">Rio carnival fever will be back in</a></h2>
+          <div id="scroll" class="section-text">
+						<h2><a>Rio carnival fever will be back in</a></h2>
 						<p class="p-on-white" id="countdown"></p>
           </div>
           
@@ -162,6 +160,7 @@
 
 </body>
 
+<script src="js/jquery.js"></script>
 <script src="js/animation.js"></script>
 <script src="js/dayscountdown.js"></script>
 <script src="js/burgermenu.js"></script>
@@ -174,5 +173,4 @@
 	  });
 	});
 </script>
-
 </html>

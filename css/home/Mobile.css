@@ -40,7 +40,7 @@
 @media (max-width: 900px) {
 	
 	html, body {
-  		*overflow-x: hidden;
+  		overflow-x: hidden;
 	}
 	
 	header {

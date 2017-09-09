@@ -348,6 +348,7 @@ footer {
 	display: flex;                  /* establish flex container */
 	flex-direction: row;            /* default value; can be omitted */
 	flex-wrap: nowrap; 
+	padding-left:30%;
 }
 
 .fa-facebook-square, .fa-twitter-square, .fa-instagram, .fa-youtube-square {
